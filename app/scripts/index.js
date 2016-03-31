@@ -21,7 +21,7 @@ var Like = Backbone.Model.extend({ // ... like: function() { // do some stuff } 
 
   toJSON: function(){
     if (this.get('likes') != 1){
-    this.set('buttonLabel', "Likes")
+    this.set('buttonLabel', 'Likes');
     }
     // return toJSON original functionality
     return Backbone.Model.prototype.toJSON.call(this);
